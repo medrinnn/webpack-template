@@ -14,18 +14,22 @@
   "author": "medrinnn",
   "type": "module",
   "main": "index.js",
-  "dependencies": {
+  "devDependencies": {
     "css-loader": "^7.1.4",
+    "eslint": "^10.1.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
+    "prettier": "3.8.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.105.4",
     "webpack-cli": "^7.0.2",
     "webpack-dev-server": "^5.2.3"
   },
-  "scripts":{
+  "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
-    "deploy": "sh scripts/gh-pages-deploy.sh"
+    "deploy": "sh scripts/gh-pages-deploy.sh",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   }
 }
