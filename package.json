@@ -25,6 +25,7 @@
   },
   "scripts":{
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack serve --config webpack.dev.js"
+    "dev": "webpack serve --config webpack.dev.js",
+    "deploy": "sh scripts/gh-pages-deploy.sh"
   }
 }
